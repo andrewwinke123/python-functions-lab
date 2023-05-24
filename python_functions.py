@@ -12,8 +12,6 @@ print(sum_to(10))
 
 
 
-
-
 #problem 2
 
 def largest():
@@ -44,10 +42,14 @@ def occurrences():
 #problem  4
 
 
-def product():
+def product(*args):
+    result = 1
+    for num in args:
+        result *= num
+    return result
 
-    return()
-
-
+print(product(-1, 4))
+print(product(2, 5, 5))
+print(product(4, 0.5, 5))
 
 
